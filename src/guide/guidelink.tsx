@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Guidelink () {
   return (
     <div className="guidepage-link">
-      <p className='page-title'>퍼블리싱 가이드</p>
+      <p className='page-title'>퍼블리싱 가이드(컴포넌트)</p>
       <table>
         <colgroup>
           <col width="20%" />
