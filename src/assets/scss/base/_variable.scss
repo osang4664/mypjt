@@ -1,0 +1,58 @@
+/* COLOR */
+$color-primary-main: #192957;
+$color-primary-light: #3c4c7a;
+$color-primary-hover: #5a6a97;
+$color-primary-hover2: #dce5ff;
+$color-primary-active: #9faedb;
+
+$white: #fff;
+$black: #000;
+
+$color-mono0: #575757;
+$color-mono1: #707070;
+$color-mono2: #a7a7a7;
+$color-mono3: #c6c6c6;
+$color-mono4: #d5d5d5;
+$color-mono5: #e3e3e3;
+$color-mono6: #eef0f2;
+$color-mono7: #f5f5f5;
+$color-mono8: #f1f1f1;
+
+
+$color-bg1: #e0e7f9; //어디서 쓰는거더라
+$color-bg2: #0f1d46; //adise list hover시
+
+/* bg */
+$bg-primary-main: #192957;
+$bg-primary-light: #3c4c7a;
+
+/* font-size 웬만하면 쓰지말것*/
+$text-sm : 14px;
+$text-md : 18px;
+$text-lg : 24px;
+
+/* font-weught */
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+
+
+.color-primary-main {
+  color: $color-primary-main;
+}
+.color-primary-light {
+  color: $color-primary-light;
+}
+
+.bg-primary-main {
+  background: $bg-primary-main;
+}
+.bg-primary-light {
+  background: $bg-primary-light;
+}
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+.font-weight-medium {
+  font-weight: $font-weight-medium;
+}

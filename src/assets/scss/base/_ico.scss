@@ -1,0 +1,39 @@
+.ico {
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  &.plus {
+    background-image: url('../../images/common/ico/ic_plus.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.arrow.prev {
+    background-image: url('../../images/common/ico/btn_arrow_left1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.arrow.prev.double {
+    background-image: url('../../images/common/ico/btn_doublearrow_left1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.arrow.next {
+    background-image: url('../../images/common/ico/btn_arrow_right1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  &.arrow.next.double {
+    background-image: url('../../images/common/ico/btn_doublearrow_right1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+/* ico color */
+.ico-black {
+  filter: grayscale(100%) brightness(0);
+}
+.ico-white {
+  filter: brightness(0) invert(1);
+}

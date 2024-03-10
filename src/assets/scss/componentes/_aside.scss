@@ -1,0 +1,77 @@
+.aside {
+  width: 280px;
+  height: 100vh;
+  background: $color-primary-main;
+  .logo {
+    display: block;
+    padding: 30px 26px;
+    em {
+      display: block;
+      width: 162px;
+      height: 24px;
+      background: url('../../images/common/CON-SURT_logo_white.png') no-repeat;
+      background-size: cover;
+    }
+  }
+  .light-box {
+    background: $bg-primary-light;
+    padding: 22px 35px;
+    color: $white;
+    .name {
+      margin-top: 5px;
+      font-size: 24px;
+      font-weight: $font-weight-medium;
+    }
+    .sub {
+      font-size: 14px;
+    }
+  }
+  .user-box {
+    padding: 22px 35px;
+    color: $white;
+    .name {
+      margin-top: 5px;
+      font-size: 24px;
+      font-weight: $font-weight-bold;
+    }
+    .sub {
+      font-size: 14px;
+      color: #BAC8EF;
+    }
+    ul {
+      margin-top: 15px;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      & + li {
+        margin-top: 8px;
+      }
+    }
+  }
+  .menu-list {
+    border-bottom: 1px solid #fff;
+    a {
+      display: block;
+      color: $white;
+      font-size: 20px;      
+      padding: 20px 35px;
+      border-top: 1px solid #fff;
+      &:hover {
+        //background: $color-primary-hover;
+        background: #0f1d46;
+      }
+    }
+    .active {
+      a {
+        color: $color-primary-main;
+        font-weight: $font-weight-bold;
+        background: $color-primary-active;
+      }
+    }
+  }
+  .btn {
+    margin: 20px 35px;
+  }
+}

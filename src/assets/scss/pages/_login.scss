@@ -1,0 +1,64 @@
+/* login 페이지 */
+.login_wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: $color-mono7;
+  .login_box {
+    width: 560px;
+    margin: 0 auto;
+  }
+  .img_box {
+    margin-bottom: 20px;
+    max-width: 320px;
+    margin: 0 auto;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+  .pagename {
+    font-size: 28px;
+    color: $bg-primary-main;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .text_field {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    input {
+      padding: 24px;
+      font-size: 24px;
+      border-radius: 4px;
+      background: $white;
+      border: 0;
+      ::placeholder {
+        font-size: 24px;
+        color: $color-mono0;
+      }
+    }
+    .label {
+      color: $color-mono0;
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      visibility: hidden;
+    }
+    &.active {
+      input {
+        border: 1px solid $color-mono0;
+      }
+      .label {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
