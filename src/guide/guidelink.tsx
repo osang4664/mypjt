@@ -21,16 +21,23 @@ function Guidelink () {
         <tbody>
           <tr>
             <td>
-              <Link to="/guide/btn">버튼</Link>
+              <Link to="/guide/guide_btn">버튼</Link>
             </td>
-            <td>/guide/btn</td>
+            <td>/guide/guide_btn</td>
             <td>진행중</td>
           </tr>
           <tr>
             <td>
               <Link to="/guide/guidepagenation">페이지네이션</Link>
             </td>
-            <td>/guide/pagenation</td>
+            <td>/guide/guide_pagenation</td>
+            <td>진행중</td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_table">테이블</Link>
+            </td>
+            <td>/guide/guide_table</td>
             <td>진행중</td>
           </tr>
         </tbody>

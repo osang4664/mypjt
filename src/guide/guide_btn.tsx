@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Btn () {
+function GuideBtn () {
   return (
 
     <div className='guide-container'>
@@ -80,9 +80,20 @@ function Btn () {
             </button>
           </div>
         </div>
+        <div className='guide-item'>
+          <p className='guide-title'>7. 기타
+            <p className='guide-sub'>테이블 내부에 사용됨. 호버효과 있음</p>
+          </p>
+          <div className='flex'>
+            <a href="#!" className='btn_tb'>
+              <span>확인하기</span>
+              <em className='ico arrow_right'></em> 
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
 
-export default Btn
+export default GuideBtn

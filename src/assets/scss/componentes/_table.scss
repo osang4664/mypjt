@@ -1,0 +1,31 @@
+/* 테이블 */
+.table_wrap {
+  width: 100%;
+  table {
+    width: 100%;
+    border-top: 2px solid $table-line-gray;
+    border-bottom: 2px solid $table-line-gray;
+    thead {
+      tr {
+        th {
+          padding: 22px 10px;
+          font-size: 20px;
+          color: $bg-primary-main;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-top: 4px solid $table-line-gray;
+        td {
+          padding: 22px 10px;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .btn_tb {
+    margin: 0 auto;
+  }
+}

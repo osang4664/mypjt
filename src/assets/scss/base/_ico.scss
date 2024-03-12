@@ -8,6 +8,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  //페이지네이션 화살표
   &.arrow.prev {
     background-image: url('../../images/common/ico/btn_arrow_left1.png');
     background-size: cover;
@@ -28,6 +29,12 @@
     background-size: 100%;
     background-repeat: no-repeat;
   }
+  //버튼 내부 아이콘
+  &.arrow_right {
+    background-image: url('../../images/common/ico/ic_arrow_forward @x2.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
 }
 
 /* ico color */
@@ -36,4 +43,10 @@
 }
 .ico-white {
   filter: brightness(0) invert(1);
+}
+
+/* ico size */
+.ico-size-20 {
+  width: 20px;
+  height: 20px;
 }

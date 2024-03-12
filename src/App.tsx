@@ -5,10 +5,12 @@ import './assets/scss/_index.scss';/*scss파일들 불러옴*/
 import { Routes, Route } from 'react-router-dom';
 
 import Pagenation from './components/pagenation';
+import Table from './components/table';
 
 import Guide from './guide/guidelink';
-import Btn from './guide/btn';
-import GuidePagenation from './guide/guidepagenation';
+import GuideBtn from './guide/guide_btn';
+import GuidePagenation from './guide/guide_pagenation';
+import GuideTable from './guide/guide_table';
 
 import Main from './pages/main';
 import PageList from './pages/page_list';
@@ -22,10 +24,12 @@ function App (){
     <Routes>
       <Route path="/" element={<Main/>} />
       <Route path="/guide/guidelink" element={<Guide/>} />
-      <Route path="/guide/btn" element={<Btn/>} />
-      <Route path="/guide/guidepagenation" element={<GuidePagenation/>} />
+      <Route path="/guide/guide_btn" element={<GuideBtn/>} />
+      <Route path="/guide/guide_pagenation" element={<GuidePagenation/>} />
+      <Route path="/guide/guide_table" element={<GuideTable/>} />
 
       <Route path="/components/pagenation" element={<Pagenation/>} />
+      <Route path="/components/table" element={<Table/>} />
 
       <Route path="/pages/page_list" element={<PageList/>} />
       <Route path="/pages/pagesouter" element={<Pagesouter/>} />

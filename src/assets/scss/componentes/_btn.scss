@@ -56,4 +56,41 @@
     border-radius: 4px;
     font-size: 24px;
   }
+
+  /* 기타 타입 */
+  &[class*="_tb"] {
+    background: red;
+  }
+}
+
+.btn_tb {
+  max-width: 140px;
+  height: 40px;
+  border: 1px solid $bg-primary-main;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  .ico {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+  }
+  &:hover {
+    color: $bg-primary-main;
+    font-weight: $font-weight-bold;
+    background: $color-bg1;
+    
+    span {
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+    .ico {
+      transform: scale(1.5);
+      transition: all 0.3s ease;
+      filter: invert(10%) sepia(40%) saturate(3612%) hue-rotate(215deg) brightness(98%) contrast(91%);
+    }
+  }
 }
