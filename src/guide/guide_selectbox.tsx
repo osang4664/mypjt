@@ -43,7 +43,7 @@ function GuideSelectbox() {
 
         <div className='guide-item'>
           <p className='guide-title'>2. 화살표 모양이 다른 셀렉트박스
-            <p className='guide-sub'>체크박스에 텍스트가 있는 체크박스입니다.(가로형)</p>
+            <p className='guide-sub'>1체크박스에 텍스트가 있는 체크박스입니다.(가로형)</p>
           </p>
         </div>
       </div>
