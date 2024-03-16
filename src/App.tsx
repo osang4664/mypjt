@@ -11,6 +11,8 @@ import Guide from './guide/guidelink';
 import GuideBtn from './guide/guide_btn';
 import GuidePagenation from './guide/guide_pagenation';
 import GuideTable from './guide/guide_table';
+import GuideCheckbox from './guide/guide_checkbox';
+import GuideSelectbox from './guide/guide_selectbox';
 
 import Main from './pages/main';
 import PageList from './pages/page_list';
@@ -27,6 +29,8 @@ function App (){
       <Route path="/guide/guide_btn" element={<GuideBtn/>} />
       <Route path="/guide/guide_pagenation" element={<GuidePagenation/>} />
       <Route path="/guide/guide_table" element={<GuideTable/>} />
+      <Route path="/guide/guide_checkbox" element={<GuideCheckbox/>} />
+      <Route path="/guide/guide_selectbox" element={<GuideSelectbox/>} />
 
       <Route path="/components/pagenation" element={<Pagenation/>} />
       <Route path="/components/table" element={<Table/>} />
