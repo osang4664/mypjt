@@ -28,10 +28,24 @@ function Guidelink () {
           </tr>
           <tr>
             <td>
-              <Link to="/guide/guidepagenation">페이지네이션</Link>
+              <Link to="/guide/guide_checkbox">체크박스</Link>
+            </td>
+            <td>/guide/guide_checkbox</td>
+            <td>완료</td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_selectbox">셀렉트박스</Link>
+            </td>
+            <td>/guide/guide_selectbox</td>
+            <td>완료</td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_pagenation">페이지네이션</Link>
             </td>
             <td>/guide/guide_pagenation</td>
-            <td>진행중</td>
+            <td>완료</td>
           </tr>
           <tr>
             <td>
