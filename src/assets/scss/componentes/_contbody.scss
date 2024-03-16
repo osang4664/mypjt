@@ -1,0 +1,15 @@
+.contbody {
+  width: calc(100% - 280px);
+  .page-title {
+    font-size: 32px;
+    padding: 23px 44px;
+    background: #f6f9ff;
+    color: $color-primary-main;
+    font-weight: $font-weight-bold;
+  }
+  .pagn-txt {
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}

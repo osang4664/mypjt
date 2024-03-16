@@ -1,0 +1,17 @@
+/* text */
+
+/* font-size 웬만하면 쓰지말것*/
+$text-sm : 14px;
+$text-md : 18px;
+$text-lg : 24px;
+
+/* font-weught */
+$font-weight-bold: 700;
+$font-weight-medium: 500;
+
+.font-weight-bold {
+  font-weight: $font-weight-bold;
+}
+.font-weight-medium {
+  font-weight: $font-weight-medium;
+}

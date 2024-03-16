@@ -1,0 +1,14 @@
+@import "base/reset.scss";
+@import "base/guide.scss"; /* 나중에 제거할것 */
+@import "base/variable.scss";
+@import "base/text.scss";
+@import "base/ico.scss";
+
+@import "componentes/aside.scss";
+@import "componentes/contbody.scss";
+@import "componentes/btn.scss";
+@import "componentes/pagenation.scss";
+@import "componentes/table.scss";
+
+@import "pages/pages.scss";
+@import "pages/login.scss";
