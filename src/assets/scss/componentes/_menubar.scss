@@ -1,0 +1,60 @@
+.menu_bar {
+  ul {
+    display: flex;
+    align-items: center;
+    
+  }
+  li {
+    display: flex;
+    align-items: center;
+    & + li {
+      &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        height: 27px;
+        margin: 0 26px;
+        background: $color-mono1;
+      }
+    }
+    &.title {
+      font-size: 20px;
+      font-weight: $font-weight-bold;
+    }
+    &.active {
+      a {
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+  a {
+    font-size: 20px;
+    color: $color-mono1;
+  }
+
+  /* consult 1 */
+  &.blue {
+    .active {
+      a {
+        color: $menu-color-blue;
+      }
+    }
+  }
+  /* consult 2 */
+  &.green {
+    .title {
+      color: $menu-color-deepgreen;
+    }
+    .active {
+      a {
+        color: $menu-color-green;
+      }
+    }
+  }
+  /* consult none */
+  &.gray {
+    .title {
+      color: $color-mono1;
+    }
+  }
+}

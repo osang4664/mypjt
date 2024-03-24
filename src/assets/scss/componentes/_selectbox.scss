@@ -11,7 +11,6 @@
     box-sizing: border-box;
     border-radius: 4px;
     cursor: pointer;
-    
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,11 +26,23 @@
     .ico {
       width: 20px;
       height: 20px;
+
+      //selectbox arrow
+      &.select_arrow {
+        background-image: url('../../images/common/ico/ic_arrow_forward @x2.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        transform: rotate(90deg);
+        transition: all 0.3s;
+      }
     }
     &.on {
       border-radius: 4px 4px 0 0;
       & + .list-member {
         display: block;
+      }
+      .select_arrow {
+        transform: rotate(270deg);
       }
     }
   }
@@ -49,6 +60,7 @@
     border-radius: 0 0 4px 4px;
     background: $white;
     overflow: hidden;
+    z-index: 1;
     li {
       width: 100%;
       box-sizing: border-box;
@@ -64,27 +76,138 @@
         text-overflow: ellipsis;
         overflow: hidden;
       }
+      .tit {
+        font-weight: $font-weight-bold;
+        & + span {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  &.long {
+    .btn-select {
+      padding: 12px 10px 12px 40px;
+      div {
+        width: calc(100% - 32px);
+        text-align: left;
+        .tit {
+          font-weight: $font-weight-bold;
+          margin-right: 10px;
+        }
+      }
+      .ico {
+        width: 30px;
+        height: 30px;
+      }
+      .select_arrow {
+        background-image: url('../../images/common/ico/ic_filledarrow_down @x2.png');
+        background-size: contain;
+        transform: rotate(0deg);
+        transition: all 0.3s;
+      }
+      &.on {
+        .select_arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+  &.updown {
+    ul {
+      button {
+        background: $color-mono9;
+      }
+    }
+    &.color {
+      .on {
+        box-shadow: 0px 3px 6px #00000029;
+        background: $color_light_blue;
+        &:hover {
+          background: $color_blue;
+        }
+        & + ul {
+          box-shadow: 0px 3px 6px #00000029;
+          button {
+            &:hover {
+              background: $color_blue;
+            }
+          }
+        }
+      }
+      .btn-select {
+        color: $color-primary-main;
+        font-weight: $font-weight-bold;
+        border: none;
+        padding: 22px 20px;
+        height: 68px;
+      }
+      ul {
+        top: 68px;
+        border: none;
+        li {
+          border-top: 1px solid #d9d9d9;
+          button {
+            background: $color_light_blue;
+            color: $color-primary-main;
+            font-weight: $font-weight-bold;
+            padding: 22px 20px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  &.round_left {
+    .btn-select {
+      background: $color-mono6;
+      border: 1px solid $color-primary-main;
+      border-radius: 4px 0 0 4px;
+      padding: 14px 15px 14px 20px;
+      height: 60px;
+      .ico {
+        width: 32px;
+        height: 32px;
+      }
+      .select_arrow {
+        background-image: url('../../images/common/ico/ic_filledarrow_down @x2.png');
+        background-size: contain;
+        transform: rotate(0deg);
+        transition: all 0.3s;
+      }
+      &.on {
+        .select_arrow {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    ul {
+      top: 60px;
+      border: 1px solid $color-mono5;
+    }
+    li {
+      button {
+        font-size: 20px;
+        padding: 18px 20px;
+      }
+      & + li {
+        border-top: 1px solid $color-mono5;
+      }
+    }
+    .on {
+      border-radius: 4px 0 0 0;
     }
   }
 }
 
-
+// .list-member li button:hover,
+// .list-member li button:focus {
+//   background-color: #F8E4FF;
+// }
 
 // .btn-select:hover,
 // .btn-select:focus {
 //   border: 1px solid #9B51E0;
 //   outline: 3px solid #F8E4FF;
 // }
-
-
-
-
-
-
-
-
-
-.list-member li button:hover,
-.list-member li button:focus {
-  background-color: #F8E4FF;
-}

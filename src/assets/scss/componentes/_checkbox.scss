@@ -15,6 +15,13 @@
       position: relative;
       padding-left: 26px;
       cursor: pointer;
+      span {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 26px;  
+        letter-spacing: -1px;
+        color: rgba(0, 0, 0, 0.5);
+      }
       /* 체크박스 모양 잡는곳 */
       &::before {
         content: "";
