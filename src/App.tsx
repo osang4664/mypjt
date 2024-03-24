@@ -5,6 +5,7 @@ import './assets/scss/_index.scss';/*scss파일들 불러옴*/
 import { Routes, Route } from 'react-router-dom';
 
 import Pagenation from './components/pagenation';
+import Searchbox from './components/searchbox';
 import Table from './components/table';
 
 import Guide from './guide/guidelink';
@@ -13,6 +14,9 @@ import GuidePagenation from './guide/guide_pagenation';
 import GuideTable from './guide/guide_table';
 import GuideCheckbox from './guide/guide_checkbox';
 import GuideSelectbox from './guide/guide_selectbox';
+import GuideSearchbox from './guide/guide_searchbox';
+import GuideMenubar from './guide/guide_menubar';
+import GuideUtilbox from './guide/guide_utilbox';
 
 import Main from './pages/main';
 import PageList from './pages/page_list';
@@ -31,8 +35,12 @@ function App (){
       <Route path="/guide/guide_table" element={<GuideTable/>} />
       <Route path="/guide/guide_checkbox" element={<GuideCheckbox/>} />
       <Route path="/guide/guide_selectbox" element={<GuideSelectbox/>} />
+      <Route path="/guide/guide_searchbox" element={<GuideSearchbox/>} />
+      <Route path="/guide/guide_menubar" element={<GuideMenubar/>} />
+      <Route path="/guide/guide_utilbox" element={<GuideUtilbox/>} />
 
       <Route path="/components/pagenation" element={<Pagenation/>} />
+      <Route path="/components/searchbox" element={<Searchbox/>} />
       <Route path="/components/table" element={<Table/>} />
 
       <Route path="/pages/page_list" element={<PageList/>} />

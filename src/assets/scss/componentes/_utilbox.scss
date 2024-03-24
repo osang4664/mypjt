@@ -1,0 +1,49 @@
+.utilbox {
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  
+  .active_line {
+    display: flex;
+    align-items: center;
+    .active {
+      a {
+        font-weight: $font-weight-bold;
+        color: $menu-color-blue;
+      }
+    }
+    li {
+      display: flex;
+      align-items: center;
+      & + li {
+        &::before {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 20px;
+          background: $color-mono4;
+          margin: 0 10px;
+        }
+      }
+      &.add_txt {
+        margin-left: 20px;
+        a {
+          font-weight: $font-weight-bold;
+          color: $menu-color-blue;
+        }
+        &::before {
+          display: none;
+        }
+      }
+    }
+    a {
+      font-size: 18px;
+      color: $color-mono4;
+    }
+  }
+  .btn {
+    padding: 12px 48px;
+  }
+}

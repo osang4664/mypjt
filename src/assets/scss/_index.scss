@@ -1,4 +1,5 @@
 @import "base/reset.scss";
+@import "base/common.scss";
 @import "base/guide.scss"; /* 나중에 제거할것 */
 @import "base/variable.scss";
 @import "base/text.scss";
@@ -11,7 +12,10 @@
 @import "componentes/pagenation.scss";
 @import "componentes/table.scss";
 @import "componentes/checkbox.scss";
+@import "componentes/searchbox.scss";
 @import "componentes/selectbox.scss";
+@import "componentes/menubar.scss";
+@import "componentes/utilbox.scss";
 
 
 @import "pages/pages.scss";

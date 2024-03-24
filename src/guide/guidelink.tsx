@@ -49,10 +49,31 @@ function Guidelink () {
           </tr>
           <tr>
             <td>
+              <Link to="/guide/guide_searchbox">검색바</Link>
+            </td>
+            <td>/guide/guide_searchbox</td>
+            <td>완료</td>
+          </tr>
+          <tr>
+            <td>
               <Link to="/guide/guide_table">테이블</Link>
             </td>
             <td>/guide/guide_table</td>
             <td>진행중</td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_menubar">메뉴바</Link>
+            </td>
+            <td>/guide/guide_menubar</td>
+            <td>완료</td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_utilbox">유틸박스</Link>
+            </td>
+            <td>/guide/guide_utilbox</td>
+            <td>완료</td>
           </tr>
         </tbody>
       </table>

@@ -1,0 +1,50 @@
+.searchbox {
+  display: flex;
+  align-items: center;
+
+  .searchbox_main {
+    position: relative;
+    width: calc(100% - 120px);
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid $color-primary-main;
+    border-radius: 4px 0 0 4px;
+    border-right: none;
+    overflow: hidden;
+    .searchbox_place {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: $search-place-color;
+    }
+    input {
+      width: 100%;
+      border: none;
+      padding: 15.5px 20px;
+      font-size: 24px;
+    }
+  }
+  /* input에 입력시 */
+  &.on {
+    .searchbox_place {
+      visibility: hidden;
+    }
+  }
+  .go_search {
+    background: $bg-primary-main;
+    border: 1px solid $color-primary-main;
+    width: 120px;
+    border-radius: 0 4px 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 17px 0;
+    .ico {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

@@ -7,9 +7,17 @@
     color: $color-primary-main;
     font-weight: $font-weight-bold;
   }
-  .pagn-txt {
-    font-size: 20px;
-    margin-top: 10px;
-    text-align: center;
+  .body-inner {
+    padding: 0 44px;
+
+    .searchbox  {
+      margin-top: 162px;
+      margin-left: 242px;
+      margin-right: 242px;
+    }
+    .utilbox {
+      margin-top: 27px;
+      border-top: 2px solid $table-line-gray;
+    }
   }
 }

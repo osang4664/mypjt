@@ -35,12 +35,11 @@
     background-size: 100%;
     background-repeat: no-repeat;
   }
-  //selectbox arrow
-  &.select_arrow {
-    background-image: url('../../images/common/ico/ic_arrow_forward @x2.png');
+  //검색 아이콘
+  &.search {
+    background-image: url('../../images/common/ico/ic_search @x2.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    transform: rotate(90deg);
   }
 }
 
