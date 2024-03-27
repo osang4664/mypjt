@@ -31,13 +31,13 @@ function GuideCheckbox () {
             <p className='guide-sub'>체크박스에 텍스트가 있는 체크박스입니다.(가로형)</p>
           </p>
           <div className='flex'>
-            <div className="checkbox">
+            <div className="checkbox with_txt">
               <input id="agree3" type="checkbox" />
               <label htmlFor="agree3">
                   <span>개인정보처리 방침에 따라 개인정보 수집ㆍ활용에 동의합니다.</span>
               </label>
             </div>
-            <div className="checkbox">
+            <div className="checkbox with_txt">
               <input id="agree4" type="checkbox" />
                 <label htmlFor="agree4">
                     <span>개인정보처리 방침에 따라 개인정보 수집ㆍ활용에 동의합니다.</span>
