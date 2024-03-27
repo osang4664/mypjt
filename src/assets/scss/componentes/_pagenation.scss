@@ -45,3 +45,19 @@
     margin-top: 10px;
   }
 }
+
+/* pagenation */
+.pagenation-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  
+  .selectbox {
+    max-width: 140px;
+    //margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

@@ -8,8 +8,10 @@
     font-weight: $font-weight-bold;
   }
   .body-inner {
-    padding: 0 44px;
-
+    padding: 0 44px 60px;
+    box-sizing: border-box;
+    height: calc(100vh - 78px);
+    overflow-y: auto;
     .searchbox  {
       margin-top: 162px;
       margin-left: 242px;
@@ -18,6 +20,9 @@
     .utilbox {
       margin-top: 27px;
       border-top: 2px solid $table-line-gray;
+    }
+    .pagenation-box  {
+      margin-top: 18px;
     }
   }
 }

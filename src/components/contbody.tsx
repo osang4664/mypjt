@@ -4,7 +4,11 @@ import Searchbox from './searchbox';
 
 function Contbody () {
   const [isOpen1, setIsOpen1] = useState(false);
-  const [selectedItem1, setSelectedItem1] = useState<string>('NO'); 
+  const [selectedItem1, setSelectedItem1] = useState<string>('NO');
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [selectedItem2, setSelectedItem2] = useState<string>('이름'); 
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [selectedItem3, setSelectedItem3] = useState<string>('5줄 보기'); 
 
   const handleToggle1 = () => {
     setIsOpen1(!isOpen1);
@@ -12,6 +16,20 @@ function Contbody () {
   const handleItemClick1 = (item: string) => { 
     setSelectedItem1(item);
     setIsOpen1(false);
+  };
+  const handleToggle2 = () => {
+    setIsOpen2(!isOpen2);
+  };
+  const handleItemClick2 = (item: string) => { 
+    setSelectedItem2(item);
+    setIsOpen2(false);
+  };
+  const handleToggle3 = () => {
+    setIsOpen3(!isOpen3);
+  };
+  const handleItemClick3 = (item: string) => { 
+    setSelectedItem3(item);
+    setIsOpen3(false);
   };
   return (
     <div className='contbody'>
@@ -77,7 +95,20 @@ function Contbody () {
                     </ul>
                   </div>
                 </th>
-                <th>name selectbox</th>
+                <th>
+                  <div className="selectbox updown color">
+                    <button className={`btn-select ${isOpen2 ? 'on' : ''}`} onClick={handleToggle2}>
+                      <span>
+                        {selectedItem2}
+                      </span>
+                      <i className='ico select_arrow down'></i>
+                    </button>
+                    <ul className={`list-member ${isOpen2 ? 'open' : ''}`}>
+                      <li><button type="button" onClick={() => handleItemClick2('오름차순')}>오름차순</button></li>
+                      <li><button type="button" onClick={() => handleItemClick2('내림차순')}>내림차순</button></li>
+                    </ul>
+                  </div>
+                </th>
                 <th>아이디/이메일</th>
                 <th>연락처</th>
                 <th>기관명</th>
@@ -88,7 +119,13 @@ function Contbody () {
             </thead>
             <tbody>
               <tr>
-                <td>checkbox</td>
+                <td>
+                  <div className="checkbox">
+                    <input id="agree2" type="checkbox" />
+                    <label htmlFor="agree2">
+                    </label>
+                  </div>
+                </td>
                 <td>1</td>
                 <td>손이나</td>
                 <td>sonene@medimind.kr</td>
@@ -104,16 +141,114 @@ function Contbody () {
                 </td>
               </tr>
               <tr>
-                <td>내용1</td>
-                <td>내용1</td>
-                <td>내용1</td>
-                <td>내용1</td>
-                <td>내용1</td>
+                <td>
+                  <div className="checkbox">
+                    <input id="agree3" type="checkbox" />
+                    <label htmlFor="agree3">
+                    </label>
+                  </div>
+                </td>
+                <td>1</td>
+                <td>손이나</td>
+                <td>sonene@medimind.kr</td>
+                <td>010-1234-5678</td>
+                <td>메디마인드</td>
+                <td>1988-01-01</td>
+                <td>여자</td>
+                <td>
+                  <a href="#!" className='btn_tb'>
+                    <span>확인하기</span>
+                    <em className='ico arrow_right'></em> 
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="checkbox">
+                    <input id="agree3" type="checkbox" />
+                    <label htmlFor="agree3">
+                    </label>
+                  </div>
+                </td>
+                <td>1</td>
+                <td>손이나</td>
+                <td>sonene@medimind.kr</td>
+                <td>010-1234-5678</td>
+                <td>메디마인드</td>
+                <td>1988-01-01</td>
+                <td>여자</td>
+                <td>
+                  <a href="#!" className='btn_tb'>
+                    <span>확인하기</span>
+                    <em className='ico arrow_right'></em> 
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="checkbox">
+                    <input id="agree4" type="checkbox" />
+                    <label htmlFor="agree4">
+                    </label>
+                  </div>
+                </td>
+                <td>1</td>
+                <td>손이나</td>
+                <td>sonene@medimind.kr</td>
+                <td>010-1234-5678</td>
+                <td>메디마인드</td>
+                <td>1988-01-01</td>
+                <td>여자</td>
+                <td>
+                  <a href="#!" className='btn_tb'>
+                    <span>확인하기</span>
+                    <em className='ico arrow_right'></em> 
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div className="checkbox">
+                    <input id="agree5" type="checkbox" />
+                    <label htmlFor="agree5">
+                    </label>
+                  </div>
+                </td>
+                <td>1</td>
+                <td>손이나</td>
+                <td>sonene@medimind.kr</td>
+                <td>010-1234-5678</td>
+                <td>메디마인드</td>
+                <td>1988-01-01</td>
+                <td>여자</td>
+                <td>
+                  <a href="#!" className='btn_tb'>
+                    <span>확인하기</span>
+                    <em className='ico arrow_right'></em> 
+                  </a>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-        <Pagenation />
+        <div className="pagenation-box ">
+          <Pagenation />
+          <div className="selectbox">
+            <button className={`btn-select ${isOpen3 ? 'on' : ''}`} onClick={handleToggle3}>
+              <span>
+                {selectedItem3}
+              </span>
+              <i className='ico select_arrow down'></i>
+            </button>
+            <ul className={`list-member ${isOpen3 ? 'open' : ''}`}>
+              <li><button type="button" onClick={() => handleItemClick3('Python')}>Python</button></li>
+              <li><button type="button" onClick={() => handleItemClick3('Java')}>Java</button></li>
+              <li><button type="button" onClick={() => handleItemClick3('JavaScript')}>JavaScript</button></li>
+              <li><button type="button" onClick={() => handleItemClick3('C#')}>C#</button></li>
+              <li><button type="button" onClick={() => handleItemClick3('C/C++')}>C/C++</button></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   )

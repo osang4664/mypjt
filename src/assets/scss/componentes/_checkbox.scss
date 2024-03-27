@@ -1,4 +1,7 @@
 .checkbox {
+  position: relative;
+  width: 22px;
+  height: 22px;
   input[type="checkbox"] {
     //기존 input 숨김
     position: absolute;
@@ -12,8 +15,10 @@
 
     & + label {
       display: inline-block;
-      position: relative;
+      position: absolute;
       padding-left: 26px;
+      left: 0;
+      top: 0;
       cursor: pointer;
       span {
         font-weight: 400;
@@ -61,14 +66,23 @@
           background-size: contain;
           border-radius: 5px;
         }
-        /* 뒤에 나오는 텍스트 스타일 */
-        span {
-          font-weight: 400;
-          font-size: 13px;
-          line-height: 26px;  
-          letter-spacing: -1px;
-          color: rgba(0, 0, 0, 0.5);
-        }
+      }
+    }
+  }
+  &.with_txt {
+    width: auto;
+    height: auto;
+    input[type="checkbox"] {
+      & + label {
+        position: relative;
+      }
+      /* 뒤에 나오는 텍스트 스타일 */
+      span {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 26px;  
+        letter-spacing: -1px;
+        color: rgba(0, 0, 0, 0.5);
       }
     }
   }
