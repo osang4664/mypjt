@@ -23,9 +23,9 @@ function PageList () {
         <tbody>
           <tr>
             <td>
-              <Link to="../../pages/login">로그인</Link>
+              <Link to="../../pages/pagesouter">샘플페이지</Link>
             </td>
-            <td>/pages/login</td>
+            <td>/pages/pagesouter</td>
             <td>완료</td>
             <td>03-10</td>
             <td></td>
@@ -35,6 +35,15 @@ function PageList () {
               <Link to="../../pages/login">로그인</Link>
             </td>
             <td>/login</td>
+            <td>완료</td>
+            <td>03-10</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="../../pages/consult2/manage4">consult2_이용자관리4</Link>
+            </td>
+            <td>/pages/consult2/manage4</td>
             <td>완료</td>
             <td>03-10</td>
             <td></td>

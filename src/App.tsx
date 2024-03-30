@@ -17,12 +17,14 @@ import GuideSelectbox from './guide/guide_selectbox';
 import GuideSearchbox from './guide/guide_searchbox';
 import GuideMenubar from './guide/guide_menubar';
 import GuideUtilbox from './guide/guide_utilbox';
+import GuideTextfield from './guide/guide_textfield';
 
 import Main from './pages/main';
 import PageList from './pages/page_list';
 import Pagesouter from './pages/pagesouter';
 
 import Login from './pages/login';
+import Manage4 from './pages/consult2/manage4';
 
 
 function App (){
@@ -38,6 +40,7 @@ function App (){
       <Route path="/guide/guide_searchbox" element={<GuideSearchbox/>} />
       <Route path="/guide/guide_menubar" element={<GuideMenubar/>} />
       <Route path="/guide/guide_utilbox" element={<GuideUtilbox/>} />
+      <Route path="/guide/guide_textfield" element={<GuideTextfield/>} />
 
       <Route path="/components/pagenation" element={<Pagenation/>} />
       <Route path="/components/searchbox" element={<Searchbox/>} />
@@ -46,6 +49,7 @@ function App (){
       <Route path="/pages/page_list" element={<PageList/>} />
       <Route path="/pages/pagesouter" element={<Pagesouter/>} />
       <Route path="/pages/login" element={<Login/>} />
+      <Route path="/pages/consult2/manage4" element={<Manage4/>} />
     </Routes>
   );
 }

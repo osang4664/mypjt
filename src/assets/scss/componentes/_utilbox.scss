@@ -47,3 +47,36 @@
     padding: 12px 48px;
   }
 }
+.util_hiddenbox {
+  background: $util-bg-color;
+  display: flex;
+  align-items: center;
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 42px;
+    float: left;
+    padding-left: 136px;
+  }
+  li {
+    width: calc(33.333% - 42px);
+    .selectbox {
+      width: auto;
+    }
+  }
+  .fieldname {
+    font-size: 16px;
+    color: $textfield-primary-color;
+    font-weight: $font-weight-bold;
+    margin-bottom: 4px;
+  }
+  .btn {
+    width: 240px;
+    margin-left: auto;
+    background: $util-btn-color;
+    &:hover {
+      background: $util-btn-hover;
+    }
+  }
+}
