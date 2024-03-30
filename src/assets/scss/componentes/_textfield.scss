@@ -1,0 +1,45 @@
+/* textfield */
+.textfield {
+  min-width: 180px;
+  
+  .textfield_box {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .textfield_place {
+    position: absolute;
+    top: 53%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: $textfield-place-color;
+  }
+  input {
+    width: 100%;
+    height: 50px;
+    border: none;
+    padding: 11.25px 12px;
+    font-size: 24px;
+    border: 1px solid $color-mono5;
+    border-radius: 6px;
+    box-sizing: border-box;
+    &:focus {
+      border: 1px solid $textfield-primary-color;
+    }
+  }
+  /* input에 입력시 */
+  &.on {
+    .textfield_place {
+      visibility: hidden;
+    }
+  }
+  &:hover {
+    .textfield_box {
+      input {
+        border: 1px solid $textfield-primary-color;
+      }
+    }
+  }
+}

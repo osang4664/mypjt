@@ -12,6 +12,9 @@
     display: flex;
     gap: 10px;
     width: 90%;
+    &.flex-column {
+      flex-direction: column;
+    }
   }
   .link {
     display: block;
@@ -78,5 +81,8 @@
     margin-top: 10px;
     display: flex;
     gap: 10px;
+    &.flex-column {
+      flex-direction: column;
+    }
   }
 }

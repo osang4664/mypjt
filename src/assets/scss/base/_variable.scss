@@ -28,6 +28,9 @@ $table-line-gray: #e5e5e5;
 
 /* searchbar placeholder */
 $search-place-color: #c1c1c1;
+ /* textfield placeholder */
+$textfield-place-color: #a7a7a7;
+$textfield-primary-color: #3a55a2;
 
 /* menubar color */
 $menu-color-blue: #3f51b5;
@@ -37,7 +40,6 @@ $menu-color-deepgreen: #093607;
 /* bg */
 $bg-primary-main: #192957;
 $bg-primary-light: #3c4c7a;
-
 .bg-primary-main {
   background: $bg-primary-main;
 }
@@ -46,5 +48,10 @@ $bg-primary-light: #3c4c7a;
 }
 
 /* selectbox bg color */
-$color_light_blue : #f6f9ff;
-$color_blue : #ecf1ff;
+$color-light-blue : #f6f9ff;
+$color-blue : #ecf1ff;
+
+/* util hiddenbox color */
+$util-bg-color: #f6f9fe;
+$util-btn-color: #3f569d;
+$util-btn-hover: #213160;

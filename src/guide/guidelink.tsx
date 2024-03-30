@@ -75,6 +75,13 @@ function Guidelink () {
             <td>/guide/guide_utilbox</td>
             <td>완료</td>
           </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_textfield">텍스트필드</Link>
+            </td>
+            <td>/guide/guide_textrield</td>
+            <td>완료</td>
+          </tr>
         </tbody>
       </table>
     </div>
