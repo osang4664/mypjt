@@ -51,16 +51,20 @@
   background: $util-bg-color;
   display: flex;
   align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
   ul {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 42px;
-    float: left;
-    padding-left: 136px;
+    width: calc(100% - 240px);
+    margin-right: 120px;
+    //padding-left: 136px;
   }
   li {
-    width: calc(33.333% - 42px);
+    //width: calc(33.333% - 42px);
+    width: calc(33.333% - 28px);
     .selectbox {
       width: auto;
     }

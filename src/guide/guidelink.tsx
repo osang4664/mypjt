@@ -35,6 +35,13 @@ function Guidelink () {
           </tr>
           <tr>
             <td>
+              <Link to="/guide/guide_radiobox">라디오박스</Link>
+            </td>
+            <td>/guide/guide_radiobox</td>
+            <td>완료</td>
+          </tr>
+          <tr>
+            <td>
               <Link to="/guide/guide_selectbox">셀렉트박스</Link>
             </td>
             <td>/guide/guide_selectbox</td>
