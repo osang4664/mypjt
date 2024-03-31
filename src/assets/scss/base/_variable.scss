@@ -41,6 +41,8 @@ $menu-color-deepgreen: #093607;
 /* bg */
 $bg-primary-main: #192957;
 $bg-primary-light: #3c4c7a;
+$bg-light-blue: #eef1ff;
+$bg-light-green: #e5f3ee;
 .bg-primary-main {
   background: $bg-primary-main;
 }
@@ -51,10 +53,6 @@ $bg-primary-light: #3c4c7a;
 /* selectbox bg color */
 $color-light-blue : #f6f9ff;
 $color-blue : #ecf1ff;
-
-/* radiobox bg */
-$radio-bg-blue: #eef1ff;
-$radio-bg-green: #e5f3ee;
 
 /* util hiddenbox color */
 $util-bg-color: #f6f9fe;

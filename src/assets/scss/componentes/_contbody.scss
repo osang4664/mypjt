@@ -6,6 +6,19 @@
     background: #f6f9ff;
     color: $color-primary-main;
     font-weight: $font-weight-bold;
+    &.with-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .btn {
+        font-size: 20px;
+        color: $bg-primary-main;
+        .ico {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
   }
   .body-inner {
     padding: 0 44px 60px;
@@ -23,6 +36,9 @@
     }
     .pagenation-box  {
       margin-top: 18px;
+    }
+    .userinfo-wrap {
+      
     }
   }
 }
