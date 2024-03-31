@@ -200,17 +200,17 @@ function Manage4 () {
 
           <div className="table_wrap">
             <table>
-              {/* <colgroup>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-              </colgroup> */}
+              <colgroup>
+                <col width="84px"/>
+                <col width="106px"/>
+                <col width="106px"/>
+                <col width="294px"/>
+                <col width="200px"/>
+                <col width="200px"/>
+                <col width="176px"/>
+                <col width="176px"/>
+                <col width=""/>
+              </colgroup>
               <thead>
                 <tr>
                   <th>

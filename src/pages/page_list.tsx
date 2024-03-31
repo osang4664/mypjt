@@ -53,6 +53,15 @@ function PageList () {
               <Link to="../../pages/consult2/manage4">consult2_이용자관리4</Link>
             </td>
             <td>/pages/consult2/manage4</td>
+            <td>완료</td>
+            <td>03-31</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
+              <Link to="../../pages/consult2/manage4">consult2_이용자관리6</Link>
+            </td>
+            <td>/pages/consult2/manage6</td>
             <td>진행중</td>
             <td>03-31</td>
             <td></td>
