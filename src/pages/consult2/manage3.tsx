@@ -1,22 +1,19 @@
-import React, {useState, ChangeEvent} from 'react'
+import React, { useState, ChangeEvent } from 'react';
 
 import Aside from '../../components/aside'
 import Pagenation from '../../components/pagenation';
 import Searchbox from '../../components/searchbox';
 
-function Manage4 () {
-  //selectbox
+function Manage3 () {
+  /* selectbox */
   const [isOpen1, setIsOpen1] = useState(false);
   const [selectedItem1, setSelectedItem1] = useState<string>('NO');
   const [isOpen2, setIsOpen2] = useState(false);
   const [selectedItem2, setSelectedItem2] = useState<string>('이름'); 
   const [isOpen3, setIsOpen3] = useState(false);
   const [selectedItem3, setSelectedItem3] = useState<string>('5줄 보기'); 
-  const [isOpen4, setIsOpen4] = useState(false);
-  const [selectedItem4, setSelectedItem4] = useState<string>('생년월일'); 
-  const [isOpen5, setIsOpen5] = useState(false);
-  const [selectedItem5, setSelectedItem5] = useState<string>('성별'); 
-  //selectbox
+
+  /* selectbox */
   const handleToggle1 = () => {
     setIsOpen1(!isOpen1);
   };
@@ -38,46 +35,38 @@ function Manage4 () {
     setSelectedItem3(item);
     setIsOpen3(false);
   };
-  const handleToggle4 = () => {
-    setIsOpen4(!isOpen4);
-  };
-  const handleItemClick4 = (item: string) => { 
-    setSelectedItem4(item);
-    setIsOpen4(false);
-  };
-  const handleToggle5 = () => {
-    setIsOpen5(!isOpen5);
-  };
-  const handleItemClick5= (item: string) => { 
-    setSelectedItem5(item);
-    setIsOpen5(false);
-  };
 
-  //textfield
-  const [isActive, setIsActive] = useState(false);
-  const [inputValue, setInputValue] = useState('');
-  const [isActive2, setIsActive2] = useState(false);
-  const [inputValue2, setInputValue2] = useState('');
-  const [isActive3, setIsActive3] = useState(false);
-  const [inputValue3, setInputValue3] = useState('');
-  const [isActive4, setIsActive4] = useState(false);
-  const [inputValue4, setInputValue4] = useState('');
-
+  /* textfield */
+  const [EditActive1, setEditActive1] = useState(false);
+  const [inputEdit1, setInputEdit1] = useState('');
+  const [EditActive2, setEditActive2] = useState(false);
+  const [inputEdit2, setInputEdit2] = useState('');
+  const [EditActive3, setEditActive3] = useState(false);
+  const [inputEdit3, setInputEdit3] = useState('');
+  const [EditActive4, setEditActive4] = useState(false);
+  const [inputEdit4, setInputEdit4] = useState('');
+  const [EditActive5, setEditActive5] = useState(false);
+  const [inputEdit5, setInputEdit5] = useState('');
+  /* textfield */
   const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue(event.target.value);
-    setIsActive(event.target.value.length > 0);
+    setInputEdit1(event.target.value);
+    setEditActive1(event.target.value.length > 0);
   };
   const handleInputChange2 = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue2(event.target.value);
-    setIsActive2(event.target.value.length > 0);
+    setInputEdit2(event.target.value);
+    setEditActive2(event.target.value.length > 0);
   };
   const handleInputChange3 = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue3(event.target.value);
-    setIsActive3(event.target.value.length > 0);
+    setInputEdit3(event.target.value);
+    setEditActive3(event.target.value.length > 0);
   };
   const handleInputChange4 = (event: ChangeEvent<HTMLInputElement>) => {
-    setInputValue4(event.target.value);
-    setIsActive4(event.target.value.length > 0);
+    setInputEdit4(event.target.value);
+    setEditActive4(event.target.value.length > 0);
+  };
+  const handleInputChange5 = (event: ChangeEvent<HTMLInputElement>) => {
+    setInputEdit5(event.target.value);
+    setEditActive5(event.target.value.length > 0);
   };
   return (
     <div className="wrap">
@@ -101,116 +90,25 @@ function Manage4 () {
                 <a href="#!">삭제</a>
               </li>
             </ul>
-            <button className='btn type-bg hover disabled'>
+            <button className='btn type-bg hover'>
               이용자 등록 
               <em className='ico plus'></em>
             </button>
           </div>
-
-          <div className="util_hiddenbox">
-            <ul className="infobox">
-              <li>
-                <p className='fieldname'>이름</p>
-                <div className={`textfield ${isActive ? 'on' : ''}`}>
-                  <label htmlFor="textfield1" className='textfield_box'>
-                    <input 
-                      type="text"
-                      id='textfield1'
-                      value={inputValue}
-                      onChange={handleInputChange}
-                    />
-                    <span className='textfield_place'>입력하세요</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p className='fieldname'>아이디/이메일</p>
-                <div className={`textfield ${isActive2 ? 'on' : ''}`}>
-                  <label htmlFor="textfield2" className='textfield_box'>
-                    <input 
-                      type="text"
-                      id='textfield2'
-                      value={inputValue2}
-                      onChange={handleInputChange2}
-                    />
-                    <span className='textfield_place'>입력하세요</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p className='fieldname'>기관명</p>
-                <div className={`textfield ${isActive3 ? 'on' : ''}`}>
-                  <label htmlFor="textfield3" className='textfield_box'>
-                    <input 
-                      type="text"
-                      id='textfield3'
-                      value={inputValue3}
-                      onChange={handleInputChange3}
-                    />
-                    <span className='textfield_place'>입력하세요</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p className='fieldname'>연락처</p>
-                <div className={`textfield ${isActive4 ? 'on' : ''}`}>
-                  <label htmlFor="textfield4" className='textfield_box'>
-                    <input 
-                      type="text"
-                      id='textfield4'
-                      value={inputValue4}
-                      onChange={handleInputChange4}
-                    />
-                    <span className='textfield_place'>입력하세요</span>
-                  </label>
-                </div>
-              </li>
-              <li>
-                <p className='fieldname'>생년월일</p>
-                <div className="selectbox">
-                  <button className={`btn-select ${isOpen4 ? 'on' : ''}`} onClick={handleToggle4}>
-                    <span>
-                      {selectedItem4}
-                    </span>
-                    <i className='ico select_arrow down'></i>
-                  </button>
-                  <ul className={`list-member ${isOpen4 ? 'open' : ''}`}>
-                    <li><button type="button" onClick={() => handleItemClick4('생년월일')}>생년월일</button></li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <p className='fieldname'>성별</p>
-                <div className="selectbox">
-                  <button className={`btn-select ${isOpen5 ? 'on' : ''}`} onClick={handleToggle5}>
-                    <span>
-                      {selectedItem5}
-                    </span>
-                    <i className='ico select_arrow down'></i>
-                  </button>
-                  <ul className={`list-member ${isOpen5 ? 'open' : ''}`}>
-                    <li><button type="button" onClick={() => handleItemClick5('남자')}>남자</button></li>
-                    <li><button type="button" onClick={() => handleItemClick5('여자')}>여자</button></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-            <button className='btn type-bg'>등록하기</button>
-          </div>
-
+          
           <div className="table_wrap">
             <table>
-              {/* <colgroup>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-                <col width="20%"/>
-              </colgroup> */}
+              <colgroup>
+                <col width="84px"/>
+                <col width="106px"/>
+                <col width="106px"/>
+                <col width="294px"/>
+                <col width="200px"/>
+                <col width="200px"/>
+                <col width="176px"/>
+                <col width="176px"/>
+                <col width=""/>
+              </colgroup>
               <thead>
                 <tr>
                   <th>
@@ -257,7 +155,7 @@ function Manage4 () {
                 </tr>
               </thead>
               <tbody>
-                <tr>
+                <tr className='selected'>
                   <td>
                     <div className="checkbox">
                       <input id="agree2" type="checkbox" />
@@ -266,16 +164,97 @@ function Manage4 () {
                     </div>
                   </td>
                   <td>1</td>
-                  <td>손이나</td>
-                  <td>sonene@medimind.kr</td>
-                  <td>010-1234-5678</td>
-                  <td>메디마인드</td>
-                  <td>1988-01-01</td>
-                  <td>여자</td>
+                  <td>
+                    <div className={`textfield ${EditActive1 ? 'on' : ''}`}>
+                      <label htmlFor="textfield1" className='textfield_box'>
+                        <input 
+                          type="text"
+                          id='textfield1'
+                          value={inputEdit1}
+                          onChange={handleInputChange}
+                        />
+                        <span className='textfield_place'>박재민</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className={`textfield ${EditActive2 ? 'on' : ''}`}>
+                      <label htmlFor="textfield2" className='textfield_box'>
+                        <input 
+                          type="text"
+                          id='textfield2'
+                          value={inputEdit2}
+                          onChange={handleInputChange2}
+                        />
+                        <span className='textfield_place'>sonene@medimind.kr</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className={`textfield ${EditActive3 ? 'on' : ''}`}>
+                      <label htmlFor="textfield3" className='textfield_box'>
+                        <input 
+                          type="text"
+                          id='textfield3'
+                          value={inputEdit3}
+                          onChange={handleInputChange3}
+                        />
+                        <span className='textfield_place'>01012345678</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className={`textfield ${EditActive4 ? 'on' : ''}`}>
+                      <label htmlFor="textfield4" className='textfield_box'>
+                        <input 
+                          type="text"
+                          id='textfield4'
+                          value={inputEdit4}
+                          onChange={handleInputChange4}
+                        />
+                        <span className='textfield_place'>메디마인드</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className={`textfield ${EditActive5 ? 'on' : ''}`}>
+                      <label htmlFor="textfield5" className='textfield_box'>
+                        <input 
+                          type="text"
+                          id='textfield5'
+                          value={inputEdit5}
+                          onChange={handleInputChange5}
+                        />
+                        <span className='textfield_place'>19900101</span>
+                      </label>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="redio-box-outer">
+                      <div className="radio-box type-rec">
+                        <label className='radio-btn'>
+                          <input
+                            type="radio"
+                            name="radioGroup3"
+                            checked
+                            />
+                          <span className='dot'></span>
+                          <span className="text">남자</span>
+                        </label>
+                        <label className='radio-btn'>
+                          <input
+                            type="radio"
+                            name="radioGroup3"
+                            />
+                          <span className='dot'></span>
+                          <span className="text">여자</span>
+                        </label>
+                      </div>
+                    </div>
+                  </td>
                   <td>
                     <a href="#!" className='btn_tb'>
-                      <span>확인하기</span>
-                      <em className='ico arrow_right'></em> 
+                      <span>저장하기</span>
                     </a>
                   </td>
                 </tr>
@@ -394,4 +373,4 @@ function Manage4 () {
   )
 }
 
-export default Manage4
+export default Manage3

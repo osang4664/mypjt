@@ -28,6 +28,21 @@
             margin: -6px auto;
           }
         }
+        &.selected {
+          background: $table-selected-gray;
+          .textfield {
+            min-width: auto;
+            input {
+              height: 40px;
+              padding: 8px 12px;
+              font-size: 20px;
+            }
+            .textfield_place {
+              font-size: 20px;
+            }
+          }
+        }
+        
       }
     }
   }

@@ -13,6 +13,7 @@ import GuideBtn from './guide/guide_btn';
 import GuidePagenation from './guide/guide_pagenation';
 import GuideTable from './guide/guide_table';
 import GuideCheckbox from './guide/guide_checkbox';
+import GuideRadiobox from './guide/guide_radiobox';
 import GuideSelectbox from './guide/guide_selectbox';
 import GuideSearchbox from './guide/guide_searchbox';
 import GuideMenubar from './guide/guide_menubar';
@@ -24,6 +25,7 @@ import PageList from './pages/page_list';
 import Pagesouter from './pages/pagesouter';
 
 import Login from './pages/login';
+import Manage3 from './pages/consult2/manage3';
 import Manage4 from './pages/consult2/manage4';
 
 
@@ -36,6 +38,7 @@ function App (){
       <Route path="/guide/guide_pagenation" element={<GuidePagenation/>} />
       <Route path="/guide/guide_table" element={<GuideTable/>} />
       <Route path="/guide/guide_checkbox" element={<GuideCheckbox/>} />
+      <Route path="/guide/guide_radiobox" element={<GuideRadiobox/>} />
       <Route path="/guide/guide_selectbox" element={<GuideSelectbox/>} />
       <Route path="/guide/guide_searchbox" element={<GuideSearchbox/>} />
       <Route path="/guide/guide_menubar" element={<GuideMenubar/>} />
@@ -49,6 +52,7 @@ function App (){
       <Route path="/pages/page_list" element={<PageList/>} />
       <Route path="/pages/pagesouter" element={<Pagesouter/>} />
       <Route path="/pages/login" element={<Login/>} />
+      <Route path="/pages/consult2/manage3" element={<Manage3/>} />
       <Route path="/pages/consult2/manage4" element={<Manage4/>} />
     </Routes>
   );

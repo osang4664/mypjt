@@ -41,11 +41,20 @@ function PageList () {
           </tr>
           <tr>
             <td>
+              <Link to="../../pages/consult2/manage4">consult2_이용자관리3</Link>
+            </td>
+            <td>/pages/consult2/manage3</td>
+            <td>진행중</td>
+            <td>03-31</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>
               <Link to="../../pages/consult2/manage4">consult2_이용자관리4</Link>
             </td>
             <td>/pages/consult2/manage4</td>
-            <td>완료</td>
-            <td>03-10</td>
+            <td>진행중</td>
+            <td>03-31</td>
             <td></td>
           </tr>
         </tbody>
