@@ -49,4 +49,164 @@
   .btn_tb {
     margin: 0 auto;
   }
+
+  /* 헤더 고정 스크롤 테이블 */
+  &.type_scroll_y {
+    margin-top: 10px;
+    .table_head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .table_th {
+      border: 1px solid $color-primary-main;
+      box-sizing: border-box;
+      padding: 15px 0;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & + .table_th {
+        border-left: 0;
+      }
+      &.check {
+        width: 7.5%;
+        flex-direction: column;
+        p {
+          font-size: 12px;
+          font-weight: $font-weight-bold;
+          color: $menu-color-blue;
+        }
+        .checkbox {
+          margin-top: 4px;
+        }
+      }
+      &.consult1 {
+        width: 30%;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        color: $menu-color-blue;
+      }
+      &.consult2 {
+        width: 50%;
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+        color: $menu-color-green;
+      }
+      &.state {
+        width: 5%;
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+      }
+      &.detail {
+        width: 7.5%;
+        font-size: 14px;
+        font-weight: $font-weight-bold;
+      }
+    }
+    .table_body {
+      width: 100%;
+    }
+    .table_body_line {
+      display: flex;
+    }
+    .table_td {
+      border: 1px solid $color-primary-main;
+      box-sizing: border-box;
+      font-size: 14px;
+      font-weight: $font-weight-bold;
+      & + .table_td {
+        border-left: 0;
+      }
+      &.check {
+        width: 7.5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        .checkbox {
+          margin-bottom: 20px;
+        }
+        p {
+          color: $bg-primary-main;
+        }
+        .epi {
+          font-size: 20px;
+          font-weight: $font-weight-bold;
+          margin-bottom: 4px;
+        }
+      }
+      &.consult1 {
+        width: 7.5%;
+        .top {
+          padding: 15px 0;
+          background: $bg-light-blue;
+          border-bottom: 1px solid $color-primary-main;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          text-align: center;
+        }
+      }
+      &.consult2 {
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        .top {
+          padding: 5px 0;
+          background: $bg-light-green;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 20px;
+          text-align: center;
+          flex-grow: 1;
+          width: 100%;
+        }
+        .mid {
+          padding: 10px 0;
+          background: $bg-light-green;
+          border-bottom: 1px solid $color-primary-main;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 29px;
+          text-align: center;
+          font-size: 12px;
+        }
+        .depth_2 {
+          width: 25%;
+          height: calc(100% - 30px);
+          border-top: 1px solid $color-primary-main;
+          box-sizing: border-box;
+          & + .depth_2 {
+            border-left: 1px solid $color-primary-main;
+          }
+        }
+      }
+      &.state {
+        width: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.fin {
+          background: $bg-state-blue;
+        }
+        &.ing {
+          background: $bg-state-light-blue;
+        }
+        &.exit {
+          background: $bg-state-red;
+        }
+      }
+      &.detail {
+        width: 7.5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }

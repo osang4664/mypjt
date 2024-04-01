@@ -59,7 +59,7 @@ function PageList () {
           </tr>
           <tr>
             <td>
-              <Link to="../../pages/consult2/manage4">consult2_이용자관리6</Link>
+              <Link to="../../pages/consult2/manage6">consult2_이용자관리6</Link>
             </td>
             <td>/pages/consult2/manage6</td>
             <td>진행중</td>

@@ -89,6 +89,10 @@ function GuideBtn () {
               <span>확인하기</span>
               <em className='ico arrow_right'></em> 
             </a>
+            <a href="#!" className='btn_tb size-sm'>
+              <span>더작은</span>
+              <em className='ico arrow_right'></em> 
+            </a>
           </div>
         </div>
       </div>

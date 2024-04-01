@@ -42,6 +42,17 @@
   }
   
   /* 버튼 사이즈 */
+  &.size-xsm {
+    min-width: auto;
+    max-width: 84px;
+    height: 24px;
+    padding: 0 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    color: #111;
+    gap: 2px;
+    box-sizing: border-box;
+  }
   &.size-sm {
     min-width: 80px;
     height: 30px;
@@ -91,6 +102,16 @@
       transform: scale(1.5);
       transition: all 0.3s ease;
       filter: invert(10%) sepia(40%) saturate(3612%) hue-rotate(215deg) brightness(98%) contrast(91%);
+    }
+  }
+}
+
+.btn_wrap {
+  display: flex;
+  align-items: center;
+  .btn {
+    & + .btn {
+      margin-left: 4px;
     }
   }
 }
