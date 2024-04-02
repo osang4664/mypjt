@@ -21,6 +21,7 @@ import GuideUtilbox from './guide/guide_utilbox';
 import GuideTextfield from './guide/guide_textfield';
 import GuideTabs from './guide/guide_tabs';
 import GuideUserinfoWrap from './guide/guide_userinfo-wrap';
+import GuideMarked from './guide/guide_marked';
 
 import Main from './pages/main';
 import PageList from './pages/page_list';
@@ -49,6 +50,7 @@ function App (){
       <Route path="/guide/guide_textfield" element={<GuideTextfield/>} />
       <Route path="/guide/guide_tabs" element={<GuideTabs/>} />
       <Route path="/guide/guide_userinfo-wrap" element={<GuideUserinfoWrap/>} />
+      <Route path="/guide/guide_marked" element={<GuideMarked/>} />
 
       <Route path="/components/pagenation" element={<Pagenation/>} />
       <Route path="/components/searchbox" element={<Searchbox/>} />
