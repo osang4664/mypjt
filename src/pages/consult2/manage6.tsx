@@ -108,7 +108,7 @@ function Manage6 () {
             </button>
           </div>
 
-          <div className="table_wrap type_scroll_y">
+          <div className="table_wrap type_scroll">
             <div className="table_head">
               <div className='table_th check'>
                 <p>전체선택</p>
@@ -123,7 +123,7 @@ function Manage6 () {
               <div className='table_th state'>진행상태</div>
               <div className='table_th detail'>상태보기</div>
             </div>
-            <div className="table_body">
+            <div className="table_body scroll-y">
               <div className="table_body_line">
                 <div className="table_td check">
                   <div className="checkbox">
@@ -137,25 +137,37 @@ function Manage6 () {
                 <div className="table_td consult1">
                   <div className='top'>선별평가결과</div>
                   <div className='bot'>
-                    라디오박스
+                    <div className="marked blue">
+                      <em></em>
+                      <p>2023-04-26</p>
+                    </div>
                   </div>
                 </div>
                 <div className="table_td consult1">
                   <div className='top'>마음건강<br/>설문지결과</div>
                   <div className='bot'>
-                    라디오박스
+                    <div className="marked blue">
+                      <em></em>
+                      <p>2023-04-26</p>
+                    </div>
                   </div>
                 </div>
                 <div className="table_td consult1">
                   <div className='top'>불안민감도<br/>VR평가결과</div>
                   <div className='bot'>
-                    라디오박스
+                    <div className="marked blue">
+                      <em></em>
+                      <p>2023-04-26</p>
+                    </div>
                   </div>
                 </div>
                 <div className="table_td consult1">
                   <div className='top'>타액호르몬검사</div>
                   <div className='bot'>
-                    라디오박스
+                    <div className="marked blue">
+                      <em></em>
+                      <p>2023-04-26</p>
+                    </div>
                   </div>
                 </div>
                 <div className="table_td consult2">
@@ -163,25 +175,37 @@ function Manage6 () {
                   <div className="depth_2">
                     <div className="mid">모바일 정신건강<br/>교육</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                   <div className="depth_2">
                     <div className="mid">VR 스트레스<br/>관리방법</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                   <div className="depth_2">
                     <div className="mid">모바일 스트레스<br/>관찰 일기</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                   <div className="depth_2">
                     <div className="mid">VR 소진관리</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -190,25 +214,37 @@ function Manage6 () {
                   <div className="depth_2">
                     <div className="mid">VR 마음챙김<br/>기술훈련</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                   <div className="depth_2">
                     <div className="mid">VR 감정의<br/>이해와 흐름</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                   <div className="depth_2">
                     <div className="mid">VR 힐링트립</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                   <div className="depth_2">
                     <div className="mid">모바일 문제관리<br/>Plus+</div>
                     <div className='bot'>
-                      라디오박스
+                      <div className="marked green">
+                        <em></em>
+                        <p>2023-04-26</p>
+                      </div>
                     </div>
                   </div>
                 </div>

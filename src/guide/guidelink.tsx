@@ -103,6 +103,13 @@ function Guidelink () {
             <td>/guide/guide_userinfo-wrap</td>
             <td>완료</td>
           </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_marked">마크</Link>
+            </td>
+            <td>/guide/guide_marked</td>
+            <td>완료</td>
+          </tr>
         </tbody>
       </table>
     </div>

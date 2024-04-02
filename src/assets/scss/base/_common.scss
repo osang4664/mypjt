@@ -18,3 +18,17 @@
 .mt30 {
   margin-top: 30px;
 }
+
+/* scroll-y */
+$color-primary-main: #192957;
+.scroll-y::-webkit-scrollbar {
+  width: 8px;
+}
+.scroll-y::-webkit-scrollbar-thumb {
+  height: 30%; /* 스크롤바의 길이 */
+  background: $color-primary-main; /* 스크롤바의 색상 */
+  border-radius: 10px;
+}
+.scroll-y::-webkit-scrollbar-track {
+  background: #eee;  /*스크롤바 뒷 배경 색상*/
+}
