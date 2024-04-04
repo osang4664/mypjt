@@ -1,0 +1,21 @@
+.dialog {
+  background: $white;
+  border: 1px solid $color-mono1;
+  border-radius: 8px;
+  padding: 30px 60px;
+}
+.dilog-body {
+  text-align: center;
+  font-size: 26px;
+  font-weight: $font-weight-bold;
+}
+.dilog-bottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  .btn {
+    & + .btn {
+      margin-left: 20px;
+    }
+  }
+}
