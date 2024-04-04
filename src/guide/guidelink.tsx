@@ -110,6 +110,13 @@ function Guidelink () {
             <td>/guide/guide_marked</td>
             <td>완료</td>
           </tr>
+          <tr>
+            <td>
+              <Link to="/guide/guide_dialog">dialog</Link>
+            </td>
+            <td>/guide/guide_dialog</td>
+            <td>완료</td>
+          </tr>
         </tbody>
       </table>
     </div>
