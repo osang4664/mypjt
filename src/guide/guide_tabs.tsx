@@ -35,6 +35,36 @@ function GuideTabs() {
             </div>
           </div>
         </div>
+
+        <div className='guide-item'>
+          <p className='guide-title'>2. tab style2
+            <p className='guide-sub'>con-sult에 들어가는 tab입니다.</p>
+          </p>
+          <div className='flex'>
+            <div className="tabs tabs_type2">
+              <div className="tab">
+                <ul>
+                  <li onClick={() => handleTabClick(0)} className={"consult1 " + (selectedTab === 0 ? 'active' : '')}>
+                    <a href="#!" >
+                      <span>CON-SULT 1</span>
+                    </a>
+                  </li>
+                  <li onClick={() => handleTabClick(1)} className={"consult2 " + (selectedTab === 1 ? 'active' : '')}>
+                    <a href="#!" >
+                      <span>CON-SULT 2</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className="tab-cont">
+                <ul>
+                  <li style={{ display: selectedTab === 0 ? 'block' : 'none' }}>CON-SULT 1</li>
+                  <li style={{ display: selectedTab === 1 ? 'block' : 'none' }}>CON-SULT 2</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -55,4 +55,60 @@
       }
     }
   }
+
+  &.tabs_type2 {
+    box-shadow: 0px 3px 12px #0000004D;
+    border-radius: 4px;
+    .tab {
+      li {
+        border: 0;
+        background: $white;
+        margin-right: 0;
+        a {
+          padding: 20px;
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 460px;
+            height: 50px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background: $color-mono6;
+            font-weight: $font-weight-bold;
+          }
+        }
+        &.consult1 {
+          border-radius: 8px 0 0 0;
+        }
+        &.consult2 {
+          border-radius: 0 8px 0 0;
+        }
+        &.active {
+          box-shadow: 5px -5px 5px #0000004D;
+          &::after {
+            display: none;
+          }
+          &.consult1 {
+            border-radius: 8px 8px 0 0;
+            span {
+              background: $bg-light-blue;
+              color: $menu-color-blue;
+            }
+          }
+          &.consult2 {
+            border-radius: 8px 8px 0 0;
+            span {
+              background: $bg-light-green;
+              color: $menu-color-green;
+            }
+          }
+        }
+      }
+    }
+    .tab-cont {
+      border: 0;
+      box-shadow: 0px 3px 12px #0000004D;
+    }
+  }
 }
