@@ -55,11 +55,70 @@ function GuideTabs() {
                     </a>
                   </li>
                 </ul>
+                <button className='btn type-line hover'>데이터 다운로드 (excel)</button>
               </div>
               <div className="tab-cont">
                 <ul>
-                  <li style={{ display: selectedTab === 0 ? 'block' : 'none' }}>CON-SULT 1</li>
-                  <li style={{ display: selectedTab === 1 ? 'block' : 'none' }}>CON-SULT 2</li>
+                  <li style={{ display: selectedTab === 0 ? 'flex' : 'none' }} className='contents_sub_title'>
+                    <div className="menu_bar blue">
+                      <ul>
+                        <li className='active'>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className='result_btnwrap'>
+                      <span>결과지 다운로드(pdf)</span>
+                      <div className='btn_wrap'>
+                        <button className='btn type-line hover'>선별평가</button>
+                        <button className='btn type-line hover'>마음건강설문지</button>
+                        <button className='btn type-line hover'>종합결과지</button>
+                      </div>
+                    </div>
+                  </li>
+                  <li style={{ display: selectedTab === 1 ? 'block' : 'none' }} className='contents_sub_title'>
+                    <div className="menu_bar green">
+                      <ul>
+                        <li className='active'>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="menu_bar gray">
+                      <ul>
+                        <li className=''>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                        <li>
+                          <a href="#!">선별평가결과</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
