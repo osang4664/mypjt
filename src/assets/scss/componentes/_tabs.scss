@@ -46,8 +46,8 @@
     border: 1px solid $color-primary-main;
     margin-top: -1px;
     padding: 20px;
-    ul {
-      li {
+    > ul {
+      > li {
         display: none;
         &:first-child {
           display: block;
@@ -59,6 +59,7 @@
   &.tabs_type2 {
     box-shadow: 0px 3px 12px #0000004D;
     border-radius: 4px;
+    position: relative;
     .tab {
       li {
         border: 0;
@@ -105,10 +106,39 @@
           }
         }
       }
+      .btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+      }
     }
     .tab-cont {
       border: 0;
       box-shadow: 0px 3px 12px #0000004D;
+    }
+  }
+  .contents_sub_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .result_btnwrap {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      .btn_wrap {
+        margin-left: 10px;
+        .btn {
+          & + .btn {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+    .menu_bar {
+      & + .menu_bar {
+        margin-top: 30px;
+      }
     }
   }
 }

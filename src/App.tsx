@@ -32,6 +32,7 @@ import Login from './pages/login';
 import Manage3 from './pages/consult2/manage3';
 import Manage4 from './pages/consult2/manage4';
 import Manage6 from './pages/consult2/manage6';
+import Result1 from './pages/result/result1';
 
 
 function App (){
@@ -64,6 +65,7 @@ function App (){
       <Route path="/pages/consult2/manage3" element={<Manage3/>} />
       <Route path="/pages/consult2/manage4" element={<Manage4/>} />
       <Route path="/pages/consult2/manage6" element={<Manage6/>} />
+      <Route path="/pages/result/result1" element={<Result1/>} />
     </Routes>
   );
 }
