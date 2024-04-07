@@ -48,3 +48,20 @@
     }
   }
 }
+
+/* selectbox + searchbox */
+.combine_searchbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .selectbox {
+    max-width: 210px;
+  }
+  .searchbox {
+    width: 100%;
+    .searchbox_main {
+      border-left: 0;
+      border-radius: 0;
+    }
+  }
+}
