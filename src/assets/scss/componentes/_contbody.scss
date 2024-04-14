@@ -1,5 +1,7 @@
 .contbody {
   width: calc(100% - 280px);
+  height: 100vh;
+  overflow-y: auto;
   .page-title {
     font-size: 32px;
     padding: 23px 44px;
@@ -23,8 +25,8 @@
   .body-inner {
     padding: 0 44px 60px;
     box-sizing: border-box;
-    height: calc(100vh - 78px);
-    overflow-y: auto;
+    // height: calc(100vh - 78px);
+    // overflow-y: auto;
     .searchbox  {
       margin-top: 162px;
       margin-left: 242px;

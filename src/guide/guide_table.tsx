@@ -17,6 +17,14 @@ function GuideTable () {
     setEditActive2(event.target.value.length > 0);
   };
 
+  const [isActive, setIsActive] = useState(false);
+  const [inputValue, setInputValue] = useState('');
+
+  const tableInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setInputValue(event.target.value);
+    setIsActive(event.target.value.length > 0);
+  };
+
   return (
 
     <div className='guide-container'>
@@ -160,6 +168,112 @@ function GuideTable () {
                   </tr>
                 </tbody>
               </table>
+            </div>
+          </div>
+        </div>
+
+        <div className='guide-item'>
+          <p className='guide-title'>2. 테이블 수정모드
+            <p className='guide-sub'>테이블 수정모드 입니다.</p>
+          </p>
+          <div className='flex'>
+            <div className="result_wrap">
+              <div className="table_header">
+                <span className="title">선별평가결과</span>
+                <span className="date">날짜 : 2023-03-24 09:35:21</span>
+              </div>
+              <div className="table_wrap">
+                <table>
+                  <colgroup>
+                    <col width="204px"/>
+                    <col width="204px"/>
+                    <col width="204px"/>
+                    <col width="204px"/>
+                    <col width="204px"/>
+                    <col width="508px"/>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>진단이력</th>
+                      <th>진단명</th>
+                      <th>치료여부</th>
+                      <th>상담 이력</th>
+                      <th>상담 목적</th>
+                      <th>상담 여부</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>예</td>
+                      <td>q1</td>
+                      <td>현재 치료중</td>
+                      <td>예</td>
+                      <td>1025 q2</td>
+                      <td>과거에 치료 받았으나 현재는 치료받고 있지 않음</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="table_header mt40">
+                <span className="title">선별평가결과</span>
+                <span className="date">날짜 : 2023-03-24 09:35:21</span>
+              </div>
+              <div className="table_wrap">
+                <table>
+                  <colgroup>
+                    <col width=""/>
+                    <col width=""/>
+                    <col width=""/>
+                    <col width=""/>
+                    <col width=""/>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>구분</th>
+                      <th>알람 일시</th>
+                      <th>채취 일시</th>
+                      <th>Cortisol</th>
+                      <th>DHEA</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>저녁</td>
+                      <td>2023-07-19 21:00</td>
+                      <td>2023-07-19 21:00</td>
+                      <td>
+                        <div className={`textfield ${isActive ? 'on' : ''}`}>
+                          <label htmlFor="textfield1" className='textfield_box'>
+                            <input 
+                              type="text"
+                              id='textfield1'
+                              value={inputValue}
+                              onChange={tableInputChange}
+                            />
+                            <span className='textfield_place'>입력하세요</span>
+                          </label>
+                        </div>
+                      </td>
+                      <td>
+                        <div className={`textfield ${isActive ? 'on' : ''}`}>
+                          <label htmlFor="textfield1" className='textfield_box'>
+                            <input 
+                              type="text"
+                              id='textfield1'
+                              value={inputValue}
+                              onChange={tableInputChange}
+                            />
+                            <span className='textfield_place'>입력하세요</span>
+                          </label>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="btn_wrap align-right mt10">
+                <button className='btn type-line'>저장</button>
+              </div>
             </div>
           </div>
         </div>

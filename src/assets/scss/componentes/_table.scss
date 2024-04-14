@@ -11,6 +11,7 @@
           //padding: 22px 10px;
           font-size: 20px;
           color: $bg-primary-main;
+          vertical-align: middle;
           .checkbox {
             margin: -6px auto;
           }
@@ -24,6 +25,7 @@
           padding: 22px 10px;
           font-size: 20px;
           text-align: center;
+          vertical-align: middle;
           .checkbox {
             margin: -6px auto;
           }
@@ -224,6 +226,61 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+    }
+  }
+}
+.table_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  .title {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    color: $color-primary-main;
+  }
+  .date {
+    font-size: 20px;
+    font-weight: $font-weight-bold;
+    color: $black;
+  }
+}
+
+/* tab 내부 결과 뿌려지는 테이블 */
+.result_wrap {
+  width: 100%;
+  .table_wrap {
+    table {
+      border-top: 0;
+      border-bottom: 0;
+      thead {
+        tr {
+          th {
+            background: $color-mono6;
+            padding: 12px 5px;
+            border: 1px solid $color-mono1;
+          }
+        }
+      }
+      tbody {
+        tr {
+          border-top: 0;
+          td {
+            padding: 12px 5px;
+            border: 1px solid $color-mono1;
+          }
+        }
+        .textfield {
+          input {
+            border: 0;
+            font-size: 20px;
+            height: 24px;
+          }
+          .textfield_place {
+            font-size: 20px;
+          }
+        }
       }
     }
   }
