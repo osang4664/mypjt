@@ -215,7 +215,7 @@ function Result1 () {
                       <span className="title">선별평가결과</span>
                       <span className="date">날짜 : 2023-03-24 09:35:21</span>
                     </div>
-                    <div className="table_wrap">
+                    <div className="table_wrap color_blue">
                       <table>
                         <colgroup>
                           <col width="204px"/>
@@ -247,7 +247,7 @@ function Result1 () {
                         </tbody>
                       </table>
                     </div>
-                    <div className="table_wrap">
+                    <div className="table_wrap color_blue">
                       <table>
                         <colgroup>
                           <col width="33.33%"/>
@@ -275,7 +275,7 @@ function Result1 () {
                       <span className="title">선별평가결과</span>
                       <span className="date">날짜 : 2023-03-24 09:35:21</span>
                     </div>
-                    <div className="table_wrap">
+                    <div className="table_wrap color_blue">
                       <table>
                         <colgroup>
                           <col width="408px"/>
@@ -318,7 +318,7 @@ function Result1 () {
                       <span className="title">선별평가결과</span>
                       <span className="date">날짜 : 2023-03-24 09:35:21</span>
                     </div>
-                    <div className="table_wrap">
+                    <div className="table_wrap color_blue">
                       <table>
                         <colgroup>
                           <col width=""/>
@@ -380,7 +380,7 @@ function Result1 () {
                       <span className="title">선별평가결과</span>
                       <span className="date">날짜 : 2023-03-24 09:35:21</span>
                     </div>
-                    <div className="table_wrap">
+                    <div className="table_wrap color_blue">
                       <table>
                         <colgroup>
                           <col width=""/>
@@ -486,6 +486,66 @@ function Result1 () {
                         <a href="#!">선별평가결과</a>
                       </li>
                     </ul>
+                  </div>
+                  <div className="result_wrap">
+                    <p className="result_title">정신건강교육</p>
+                    <div className="table_header color_green mt40">
+                      <span className="title">선별평가결과</span>
+                      <span className="date">날짜 : 2023-03-24 09:35:21</span>
+                    </div>
+                    <div className="table_wrap color_green">
+                      <table>
+                        <colgroup>
+                          <col width=""/>
+                          <col width=""/>
+                          <col width=""/>
+                          <col width=""/>
+                          <col width=""/>
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>알람 일시</th>
+                            <th>채취 일시</th>
+                            <th>Cortisol</th>
+                            <th>DHEA</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>저녁</td>
+                            <td>2023-07-19 21:00</td>
+                            <td>2023-07-19 21:00</td>
+                            <td>
+                              <div className={`textfield ${isActive ? 'on' : ''}`}>
+                                <label htmlFor="textfield1" className='textfield_box'>
+                                  <input 
+                                    type="text"
+                                    id='textfield1'
+                                    value={inputValue}
+                                    onChange={tableInputChange}
+                                  />
+                                  <span className='textfield_place'>입력하세요</span>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <div className={`textfield ${isActive ? 'on' : ''}`}>
+                                <label htmlFor="textfield1" className='textfield_box'>
+                                  <input 
+                                    type="text"
+                                    id='textfield1'
+                                    value={inputValue}
+                                    onChange={tableInputChange}
+                                  />
+                                  <span className='textfield_place'>입력하세요</span>
+                                </label>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </li>
               </ul>

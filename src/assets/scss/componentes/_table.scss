@@ -245,6 +245,11 @@
     font-weight: $font-weight-bold;
     color: $black;
   }
+  &.color_green {
+    .title {
+      color: $menu-color-deepgreen;
+    }
+  }
 }
 
 /* tab 내부 결과 뿌려지는 테이블 */
@@ -257,7 +262,6 @@
       thead {
         tr {
           th {
-            background: $color-mono6;
             padding: 12px 5px;
             border: 1px solid $color-mono1;
           }
@@ -279,6 +283,29 @@
           }
           .textfield_place {
             font-size: 20px;
+          }
+        }
+      }
+    }
+    &.color_blue {
+      table {
+        thead {
+          tr {
+            th {
+              background: $color-mono6;
+            }
+          }
+        }
+      }
+    }
+    &.color_green {
+      table {
+        thead {
+          tr {
+            th {
+              background: $bg-light-green;
+              color: $menu-color-deepgreen;
+            }
           }
         }
       }
