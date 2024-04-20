@@ -1,0 +1,29 @@
+.menubtn {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  background: transparent;
+  button {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    cursor: pointer;
+    gap: 4px;
+    p {
+      width: 100%;
+      height: 2px;
+      background: $color-mono1;
+    }
+  }
+  &:hover {
+    background: $color-mono3;
+    border-radius: 50%;
+  }
+}

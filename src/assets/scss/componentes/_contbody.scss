@@ -2,12 +2,21 @@
   width: calc(100% - 280px);
   height: 100vh;
   overflow-y: auto;
+  transition: all .4s;
   .page-title {
     font-size: 32px;
-    padding: 23px 44px;
+    padding: 23px 44px 23px 60px;
     background: #f6f9ff;
     color: $color-primary-main;
     font-weight: $font-weight-bold;
+    position: relative;
+    .menubtn {
+      position: absolute;
+      top: 47%;
+      left: 10px;
+      transform: translateY(-50%);
+      z-index: 1;
+    }
     &.with-btn {
       display: flex;
       align-items: center;
@@ -82,5 +91,8 @@
       gap: 10px;
       margin: 45px auto;
     }
+  }
+  &.active {
+    width: 100%;
   }
 }

@@ -7,6 +7,7 @@ import { Routes, Route } from 'react-router-dom';
 import Pagenation from './components/pagenation';
 import Searchbox from './components/searchbox';
 import Table from './components/table';
+import MenuBtn from './components/menubtn';
 
 import Guide from './guide/guidelink';
 import GuideBtn from './guide/guide_btn';
@@ -59,6 +60,7 @@ function App (){
       <Route path="/components/pagenation" element={<Pagenation/>} />
       <Route path="/components/searchbox" element={<Searchbox/>} />
       <Route path="/components/table" element={<Table/>} />
+      <Route path="/components/menubtn" element={<MenuBtn/>} />
 
       <Route path="/pages/page_list" element={<PageList/>} />
       <Route path="/pages/pagesouter" element={<Pagesouter/>} />

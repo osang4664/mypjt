@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Pagenation from './pagenation';
 import Searchbox from './searchbox';
+import MenuBtn from '../components/menubtn'
 
 function Contbody () {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -34,6 +35,7 @@ function Contbody () {
   return (
     <div className='contbody'>
       <div className="page-title">
+        <MenuBtn />
         이용자 관리
       </div>
       <div className="body-inner">

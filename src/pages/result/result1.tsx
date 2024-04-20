@@ -1,5 +1,6 @@
 import React, { useState, ChangeEvent } from 'react'
 import Aside from '../../components/aside'
+import MenuBtn from '../../components/menubtn'
 
 function Result1 () {
   /* user selectbox */
@@ -49,6 +50,7 @@ function Result1 () {
       <Aside />
       <div className='contbody'>
         <div className="page-title with-btn">
+          <MenuBtn/>
           이용자 관리
           <a href="#!" className='btn'>
             <i className='ico arrow_left'></i>
