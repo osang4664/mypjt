@@ -27,10 +27,12 @@
     box-sizing: border-box;
     // height: calc(100vh - 78px);
     // overflow-y: auto;
-    .searchbox  {
-      margin-top: 162px;
-      margin-left: 242px;
-      margin-right: 242px;
+    .searchbox_spacer {
+      .searchbox  {
+        margin-top: 162px;
+        margin-left: 242px;
+        margin-right: 242px;
+      }
     }
     .utilbox {
       margin-top: 27px;
@@ -41,6 +43,44 @@
     }
     .userinfo-wrap {
       
+    }
+    .box_outer {
+      box-shadow: 0px 3px 12px #0000004D;
+      background: $white;
+      border-radius: 4px;
+      padding: 30px;
+      .box_title {
+        font-size: 32px;
+        color: $color-primary-main;
+        font-weight: $font-weight-bold;
+      }
+      .box_title_wrap {
+        display: flex;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 1px solid $color-mono1;
+        p {
+          font-size: 32px;
+          color: $color-primary-main;
+          font-weight: $font-weight-bold;
+        }
+        .btn_wrap {
+          margin-left: auto;
+          .btn {
+            & + .btn {
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+    }
+    .info_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+      margin: 45px auto;
     }
   }
 }
