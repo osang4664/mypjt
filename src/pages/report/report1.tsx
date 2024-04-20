@@ -1,6 +1,7 @@
 import React from 'react'
 import Aside from '../../components/aside'
 import Searchbox from '../../components/searchbox';
+import MenuBtn from '../../components/menubtn'
 
 function Report1 () {
 
@@ -9,6 +10,7 @@ function Report1 () {
       <Aside />
       <div className='contbody'>
         <div className="page-title with-btn">
+          <MenuBtn/>
           기관보고서
           <a href="#!" className='btn'>
             <i className='ico arrow_left'></i>

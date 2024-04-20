@@ -2,6 +2,8 @@
   width: 280px;
   height: 100vh;
   background: $color-primary-main;
+  visibility: visible;
+  transition: all .4s;
   .logo {
     display: block;
     padding: 30px 26px;
@@ -73,5 +75,13 @@
   }
   .btn {
     margin: 20px 35px;
+  }
+  &.active {
+    transform: translateX(-100%);
+    visibility: hidden;
+    width: 0;
+    * {
+      display: none;
+    }
   }
 }

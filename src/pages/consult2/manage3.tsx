@@ -3,6 +3,7 @@ import React, { useState, ChangeEvent } from 'react';
 import Aside from '../../components/aside'
 import Pagenation from '../../components/pagenation';
 import Searchbox from '../../components/searchbox';
+import MenuBtn from '../../components/menubtn'
 
 function Manage3 () {
   /* selectbox */
@@ -73,6 +74,7 @@ function Manage3 () {
       <Aside />
       <div className='contbody'>
         <div className="page-title">
+          <MenuBtn/>
           이용자 관리
         </div>
         <div className="body-inner">
