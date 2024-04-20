@@ -76,7 +76,9 @@ function Manage3 () {
           이용자 관리
         </div>
         <div className="body-inner">
-          <Searchbox />
+          <div className="searchbox_spacer">
+            <Searchbox />
+          </div>
           <div className="utilbox">
             <ul className="active_line">
               {/* Note. 해당 li에 active 클래스 부여 */}

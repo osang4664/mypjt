@@ -75,6 +75,15 @@ function PageList () {
             <td>04-07</td>
             <td></td>
           </tr>
+          <tr>
+            <td>
+              <Link to="../../pages/report/report1">기관보고서</Link>
+            </td>
+            <td>/pages/report/report1</td>
+            <td>진행중</td>
+            <td>04-07</td>
+            <td></td>
+          </tr>
         </tbody>
       </table>
     </div>
